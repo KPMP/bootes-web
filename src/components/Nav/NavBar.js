@@ -11,7 +11,7 @@ class NavBar extends Component {
             <NavbarBrand className="d-flex align-items-center">
               <img src="img/logo.png" alt="RENAME ME" className="logo" />
               <span id="title-text" className="ml-2 text-dark">
-                RENAME ME
+                Kidney Tissue Atlas
               </span>
             </NavbarBrand>
           </Link>
