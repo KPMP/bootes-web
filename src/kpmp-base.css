@@ -5,35 +5,28 @@ body {
 #footer {
   background: #283C5E; }
 
+.navbar-header {
+  text-decoration: none !important; }
+
 #navbar {
   background-color: white;
   border-bottom: 1px solid #e7e7e7; }
-  #navbar .navbar-header {
-    text-decoration: none !important; }
-    #navbar .navbar-header .navbar-brand img.logo {
-      height: 50px; }
-  #navbar .nav-item.active {
+  #navbar .nav-item.active .nav-text {
+    padding-bottom: 12px;
     border-bottom: 3px solid #007bff;
-    text-decoration: none !important;
     margin-bottom: -6px;
     content: " "; }
-  #navbar .navbar-brand {
-    padding-top: 0px !important;
-    padding-bottom: 0px !important; }
+    @media (max-width: 576px) {
+      #navbar .nav-item.active .nav-text {
+        padding-bottom: 5px; } }
   #navbar .navbar-brand img.logo {
     width: 80px;
     min-width: 80px; }
+  #navbar .navbar-brand {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important; }
   #navbar #nav-user-dropdown-menu a:hover {
     text-decoration: none !important; }
-  #navbar .nav > li {
-    position: relative;
-    display: inline-block; }
-
-.container-fluid {
-  margin-left: 0px !important;
-  margin-right: 0px !important;
-  padding-right: 0px !important;
-  padding-left: 0px !important; }
 
 #root {
   position: relative;
@@ -58,8 +51,5 @@ body {
     height: 330px; }
 
 #title-text {
-  font-size: 20px;
-  font-weight: 500; }
-  @media only screen and (max-width: 767px) {
-    #title-text {
-      display: none; } }
+  margin-bottom: 0;
+  font-size: 20px; }
