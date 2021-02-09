@@ -29,9 +29,6 @@ const NavBar = (props) => {
             <NavItem>
               <NavLink className="active" href="/">Dashboard (Home)</NavLink>
             </NavItem>
-            <NavItem>
-              <NavbarText className="inactive">Analysis</NavbarText>
-            </NavItem>
             <NavItem >
               <NavLink href="/explorer">Explorer</NavLink>
             </NavItem>
