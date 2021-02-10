@@ -1,7 +1,7 @@
 @import "common-values.scss";
 
 body {
-	font-size: 14px;
+	font-size: 16px;
 	background-color: $kpmp-gray;
 }
 
@@ -9,21 +9,29 @@ body {
 	background: $footer-color;
 }
 
+.navbar-header {
+	text-decoration: none !important;
+}
+
 #navbar {
 	background-color: white;
 	border-bottom: 1px solid #e7e7e7;
 
-	.navbar-header {
-
-		text-decoration: none !important;
-
-		.navbar-brand img.logo {
-			height: 50px;
+	.nav-item.active {
+		.nav-text {
+          @media (max-width: 576px) {
+              padding-bottom: 5px;
+            }
+            padding-bottom: 12px;
+			border-bottom: 3px solid #007bff;
+			margin-bottom: -6px;
+			content: " ";
 		}
 	}
 
-	a.dropdown-toggle {
-
+	.navbar-brand img.logo {
+		width: 80px;
+		min-width: 80px;
 	}
 	
 	.navbar-brand {
@@ -36,13 +44,6 @@ body {
 			text-decoration: none !important;
 		}
 	}
-}
-
-.container-fluid {
-	margin-left: 0px !important;
-	margin-right: 0px !important;
-	padding-right: 0px !important;
-	padding-left: 0px !important;
 }
 
 #root {
@@ -84,9 +85,6 @@ body {
 
 
 #title-text {
+	margin-bottom: 0;
 	font-size: 20px;
-	font-weight: 500;
-	@media only screen and (max-width: 767px) {
-		display: none;
-	}
 }
