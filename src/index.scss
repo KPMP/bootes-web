@@ -21,3 +21,20 @@
 .search-box {
     margin-bottom: 15px;
 }
+
+.rt-tr.-odd {
+    background: #cee5ff !important;
+}
+
+.rt-resizable-header-content {
+    float: left;
+}
+
+#upset-plot {
+    .rt-th {
+        width: 120px !important;
+        display: table;
+        white-space: pre-wrap !important;
+    }
+
+}

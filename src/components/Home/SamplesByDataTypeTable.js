@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactTable from 'react-table';
 import initialState from '../../initialState';
+import { Row, Col } from 'reactstrap';
 
 class SamplesByDataTypeTable extends Component {
 
@@ -42,19 +43,21 @@ class SamplesByDataTypeTable extends Component {
 
     render() {
         return(
-            <div>
-                <ReactTable
-                    style={{border: 'none'}}
-                    data={this.state.summary}
-                    ref={this.reactTable}
-                    sortable={false}
-                    columns={this.state.columns}
-                    className='-striped -highlight'
-                    showPagination={false}
-                    noDataText={'No data found'}
-                    minRows = {0}
-                />
-            </div>
+            <Row className='mt-4'>
+                <Col xs='12'>
+                    <ReactTable
+                        style={{border: 'none'}}
+                        data={this.state.summary}
+                        ref={this.reactTable}
+                        sortable={false}
+                        columns={this.state.columns}
+                        className='-striped'
+                        showPagination={false}
+                        noDataText={'No data found'}
+                        minRows = {0}
+                    />
+                </Col>
+            </Row>
         );
     }
 }

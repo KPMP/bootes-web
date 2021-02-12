@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import SamplesByDataTypeTable from './SamplesByDataTypeTable';
+import UpsetPlot from './UpsetPlot';
 
 class DataSummary extends Component {
     render() {
@@ -22,10 +23,14 @@ class DataSummary extends Component {
                         9999 Samples
                         </Col>
                     </Row>
-                    <Row className='mt-2'>
-                        hi
-                        <SamplesByDataTypeTable/>
+                    
+                    <SamplesByDataTypeTable/>
+                    <Row className='mt-4'>
+                        <Col xs='12'>
+                            <div>Learn more about our data types and methodologies</div>
+                        </Col>
                     </Row>
+                    <UpsetPlot/>
                 </Container>
             </Col>
 

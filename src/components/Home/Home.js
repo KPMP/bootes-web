@@ -20,13 +20,15 @@ class Home extends Component {
                   technologies by gene, and how your marker correlates to clinical 
                   phenotypes.
                 </div>
-                <div className='mt-1'>
+                <div className='mt-3'>
                   <Button color='primary' href='/explorer' size='lg' block>Go to Explorer</Button>
                 </div>
               </Container>
               <Container className="mt-3 rounded border p-3 shadow-sm">
                 <h5>Atlas Repository</h5>
-                Lorum ipsum...
+                <div>
+                  Lorum ipsum...
+                </div>
                 <div className='mt-3'>
                   <Button color='primary' href='/repository' size='lg' block>Go to Repository</Button>
                 </div>
