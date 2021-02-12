@@ -1,3 +1,10 @@
 {
-
+    "summary": [
+        {
+            "dataType": "SN RNAseq",
+            "heatlyTissue": 99,
+            "ckdTissue": 99,
+            "akiTissue": 99
+        }
+    ]
 }
