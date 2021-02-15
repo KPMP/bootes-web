@@ -97,8 +97,18 @@ class UpsetPlot extends Component {
         } else if (row.diseaseType === 'CKD') {
             fontColor = '#8B0000';
         }
+
+        
+        let lineStyle = { width: '112px', height: '47px', borderBottom: '1px solid black', position: 'absolute'}
+        let bulletStyle = { fontSize: "22px", fontWeight: 900, textAlign: "center", display: "block", color: fontColor };
+
+
+
+        // if (nextDataType !== undefined && row[dataType] === true && row[nextDataType] === true) {
+        //     return <span className='row justify-content-center align-self-center' style={{color: fontColor}}><span style={bulletStyle}>&bull;<hr/></span></span>;
+        // }
         if (row[dataType] === true) {
-            return <span style={{fontSize: "22px", fontWeight: 900, textAlign: "center", display: "block", color: fontColor}}>&bull;</span>;
+            return <span style={bulletStyle}>&bull;</span>;
         }
         // if (nextDataType !== undefined && row[dataType] == true && row[nextDataType] === true) {
         //     return <span style={{fontSize: "22px", fontWeight: 900, textAlign: "center", display: "block"}}>&bull;</span>;
@@ -107,7 +117,6 @@ class UpsetPlot extends Component {
         // } else if (nextDataType === undefined) {
         //     return <span style={{fontSize: "22px", fontWeight: 900, textAlign: "center", display: "block"}}>&bull;</span>;
         // }
-        console.log(row)
     }
 
     render() {
@@ -115,13 +124,15 @@ class UpsetPlot extends Component {
             <article id="upset-plot">
                 <Row className='mt-4'>
                     <Col xs='12'>
-                        <div>
-                            <h6>Overlap of Participants Across Data Types</h6>
-                            <div>Explanation of data overlap upset plot</div>
-                        </div>
+                        <h6>Overlap of Participants Across Data Types</h6>
                     </Col>
                 </Row>
-                <Row className='mt-4'>
+                <Row className='mt-3'>
+                    <Col xs='12'>
+                        <div>Explanation of data overlap upset plot</div>
+                    </Col>
+                </Row>
+                <Row className='mt-4 mb-4'>
                     <Col xs='12'>
                         <ReactTable
                             style={{border: 'none'}}
