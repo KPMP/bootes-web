@@ -1,43 +1,20 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
 import DataSummary from './DataSummary';
+import LeftContent from './LeftContent';
 
 class Home extends Component {
   render() {
     return (
       <article>
         <Row>
-          <Col xs='4'>
-            <Row>
-              <Container className="mt-3 rounded border p-3 shadow-sm">
-                KIDNEY PRECISION MEDICINE PROJECT
-                <h5>Kidney Tissue Atlas</h5>
-                lorum ipsum ....
-              </Container>
-              <Container className="mt-3 rounded border p-3 shadow-sm">
-                <h5>Atlas Explorer</h5>
-                <div>View summary data visualizations across the various KPMP 'omics' 
-                  technologies by gene, and how your marker correlates to clinical 
-                  phenotypes.
-                </div>
-                <div className='mt-3'>
-                  <Button color='primary' href='/explorer' size='lg' block>Go to Explorer</Button>
-                </div>
-              </Container>
-              <Container className="mt-3 rounded border p-3 shadow-sm">
-                <h5>Atlas Repository</h5>
-                <div>
-                  Lorum ipsum...
-                </div>
-                <div className='mt-3'>
-                  <Button color='primary' href='/repository' size='lg' block>Go to Repository</Button>
-                </div>
-              </Container>              
-            </Row>
+          <Col md='12' lg='4'>
+            <LeftContent/>
           </Col>
-          <DataSummary/>
+          <Col md='12' lg='8'>
+            <DataSummary/>
+          </Col>
         </Row>
-        
       </article>
     );
   }

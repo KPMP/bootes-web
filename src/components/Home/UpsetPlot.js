@@ -91,6 +91,9 @@ class UpsetPlot extends Component {
     };
 
     renderCell(row, dataType, nextDataType) {
+        // I know we are taking in nextData type and ignoring it, this was done in an attempt to make an 
+        // upset plot using tables. Leaving it in as I never got the connecting lines added and if we revisit
+        // we'll want that anyway
         let fontColor = 'black';
         if (row.diseaseType === 'AKI') {
             fontColor = '#0275d8';
@@ -98,25 +101,12 @@ class UpsetPlot extends Component {
             fontColor = '#8B0000';
         }
 
-        
-        let lineStyle = { width: '112px', height: '47px', borderBottom: '1px solid black', position: 'absolute'}
         let bulletStyle = { fontSize: "22px", fontWeight: 900, textAlign: "center", display: "block", color: fontColor };
 
-
-
-        // if (nextDataType !== undefined && row[dataType] === true && row[nextDataType] === true) {
-        //     return <span className='row justify-content-center align-self-center' style={{color: fontColor}}><span style={bulletStyle}>&bull;<hr/></span></span>;
-        // }
         if (row[dataType] === true) {
             return <span style={bulletStyle}>&bull;</span>;
         }
-        // if (nextDataType !== undefined && row[dataType] == true && row[nextDataType] === true) {
-        //     return <span style={{fontSize: "22px", fontWeight: 900, textAlign: "center", display: "block"}}>&bull;</span>;
-        // } else if (nextDataType !== undefined && row[dataType] == true && row[nextDataType] === false){
-        //     return <span style={{fontSize: "22px", fontWeight: 900, textAlign: "center", display: "block"}}>&bull;</span>;
-        // } else if (nextDataType === undefined) {
-        //     return <span style={{fontSize: "22px", fontWeight: 900, textAlign: "center", display: "block"}}>&bull;</span>;
-        // }
+ 
     }
 
     render() {
@@ -124,12 +114,12 @@ class UpsetPlot extends Component {
             <article id="upset-plot">
                 <Row className='mt-4'>
                     <Col xs='12'>
-                        <h6>Overlap of Participants Across Data Types</h6>
+                        <span className='title'>Overlap of Participants Across Data Types</span>
                     </Col>
                 </Row>
                 <Row className='mt-3'>
                     <Col xs='12'>
-                        <div>Explanation of data overlap upset plot</div>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</div>
                     </Col>
                 </Row>
                 <Row className='mt-4 mb-4'>

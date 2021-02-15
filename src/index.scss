@@ -38,3 +38,63 @@
     }
 
 }
+ #summary-plot {
+    .rt-th {
+        width: 120px !important;
+        display: table;
+        white-space: pre-wrap !important;
+        text-align: left;
+    }
+ }
+
+.title {
+    margin-top: 0px;
+    font-size: 1.2em;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+ .summary-stats {
+     display: flex;
+     -webkit-box-pack: justify;
+     justify-content: space-between;
+
+     .stats-container {
+        margin-right: 20px;
+        white-space: nowrap;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-box-flex: 0;
+    
+        .stats-text {
+            margin-top: auto;
+            margin-bottom: auto;
+            text-align: center;
+            display: inline-block;
+
+            .stats-icon {
+                padding: 25px;
+                -webkit-box-flex: 1;
+            }
+        
+            .inline-block {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .stats-number {
+                color: $kpmp-blue;
+                font-size: 3em;
+                line-height: 1;
+            }
+            .stats-label {
+                color: $kpmp-blue;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+
+ }
+ 
+
+ 

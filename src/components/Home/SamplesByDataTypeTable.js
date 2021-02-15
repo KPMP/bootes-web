@@ -17,47 +17,60 @@ class SamplesByDataTypeTable extends Component {
     }
 
     getColumns() {
+        
         return [
             {
                 Header: 'SAMPLES BY DATA TYPE',
-                id: "dataType",
-                accessor: 'dataType'
+                id: 'dataType',
+                accessor: 'dataType',
+                maxWidth: 400
             },
             {
-                Header: "HEALTHY REFERENCE TISSUE",
-                id: "healthyTissue",
-                accessor: 'healthyTissue'
+                Header: () => (
+                    <span>HEALTHY REFERENCE<br/>TISSUE</span>
+                ),
+                id: 'healthyTissue',
+                accessor: 'healthyTissue',
+                maxWidth: 250
             },
             {
-                Header: "CKD TISSUE",
-                id: "ckdTissue",
-                accessor: 'ckdTissue'
+                Header: () => (
+                    <span>CKD<br/>TISSUE</span>
+                ),
+                id: 'ckdTissue',
+                accessor: 'ckdTissue',
+                maxWidth: 250
             },
             {
-                Header: "AKI TISSUE",
-                id: "akiTissue",
-                accessor: 'akiTissue'
+                Header: () => (
+                    <span>AKI<br/>TISSUE</span>
+                ),
+                id: 'akiTissue',
+                accessor: 'akiTissue',
+                maxWidth: 250
             },
         ]
     };
 
     render() {
         return(
-            <Row className='mt-4'>
-                <Col xs='12'>
-                    <ReactTable
-                        style={{border: 'none'}}
-                        data={this.state.summary}
-                        ref={this.reactTable}
-                        sortable={false}
-                        columns={this.state.columns}
-                        className='-striped'
-                        showPagination={false}
-                        noDataText={'No data found'}
-                        minRows = {0}
-                    />
-                </Col>
-            </Row>
+            <article id='summary-plot'>
+                <Row className='mt-4'>
+                    <Col xs='12'>
+                        <ReactTable
+                            style={{border: 'none'}}
+                            data={this.state.summary}
+                            ref={this.reactTable}
+                            sortable={false}
+                            columns={this.state.columns}
+                            className='-striped'
+                            showPagination={false}
+                            noDataText={'No data found'}
+                            minRows = {0}
+                        />
+                    </Col>
+                </Row>
+            </article>
         );
     }
 }

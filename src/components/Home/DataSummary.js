@@ -6,33 +6,47 @@ import UpsetPlot from './UpsetPlot';
 class DataSummary extends Component {
     render() {
         return(
-            <Col xs='8'>
-                <Container className="mt-3 rounded border p-3 shadow-sm">
-                    <Row><h5>Atlas Data Summary</h5></Row>
-                    <Row className='mt-2'>
-                        <Col xs='4'>
-                        <img src='img/icon_person_solid.svg'/>
-                        48 Biopsies
-                        </Col>
-                        <Col xs='4'>
-                        <img src='img/icon_dataset_solid.svg'/>
-                        21 Datasets
-                        </Col>
-                        <Col xs='4'>
-                        <img src='img/icon_Biofluids_solid.svg'/>
-                        9999 Samples
-                        </Col>
-                    </Row>
+            <Container className="mt-3 rounded border p-3 shadow-sm">
+                <Row><h5>Atlas Data Summary</h5></Row>
+                <Row className='mt-2 summary-stats'>
                     
-                    <SamplesByDataTypeTable/>
-                    <Row className='mt-4'>
-                        <Col xs='12'>
-                            <div>Learn more about our data types and methodologies</div>
-                        </Col>
-                    </Row>
-                    <UpsetPlot/>
-                </Container>
-            </Col>
+                        <div class='stats-container'>
+                            <article className='stats-text'>
+                                <img className='inline-block stats-icon' src='img/icon_person_solid.svg'/>
+                                <span className='inline-block'>
+                                    <div className='stats-number'>48</div>
+                                    <div className='stats-label'>Biopsies</div>
+                                </span>
+                            </article>
+                        </div>
+                        <div class='stats-container'>
+                            <article className='stats-text'>
+                                <img className='inline-block stats-icon' src='img/icon_dataset_solid.svg'/>
+                                <span className='inline-block'>
+                                    <div className='stats-number'>21</div>
+                                    <div className='stats-label'>Datasets</div>
+                                </span>
+                            </article>
+                        </div>
+                        <div class='stats-container'>
+                            <article className='stats-text'>
+                                <img className='inline-block stats-icon' src='img/icon_Biofluids_solid.svg'/>
+                                <span className='inline-block'>
+                                    <div className='stats-number'>999</div>
+                                    <div className='stats-label'>Samples</div>
+                                </span>
+                            </article>
+                        </div>
+                </Row>
+                
+                <SamplesByDataTypeTable/>
+                <Row className='mt-4'>
+                    <Col xs='12'>
+                        <a href=''>Learn more about our data types and methodologies</a>
+                    </Col>
+                </Row>
+                <UpsetPlot/>
+            </Container>
 
         );
     }
