@@ -1,3 +1,138 @@
 {
+    "summary": [
+        {
+            "dataType": "SN RNAseq",
+            "healthyTissue": 99,
+            "ckdTissue": 99,
+            "akiTissue": 99
+        },
+        {
+            "dataType": "SC RNAseq",
+            "healthyTissue": 99,
+            "ckdTissue": 99,
+            "akiTissue": 99
+        },
+        {
+            "dataType": "LMD RNAseq",
+            "healthyTissue": 99,
+            "ckdTissue": 99,
+            "akiTissue": 99
+        },
+        {
+            "dataType": "Bulk RNAseq",
+            "healthyTissue": 99,
+            "ckdTissue": 99,
+            "akiTissue": 99
+        },
+        {
+            "dataType": "LMD Proteomics",
+            "healthyTissue": 99,
+            "ckdTissue": 99,
+            "akiTissue": 99
+        },
+        {
+            "dataType": "3D Cytometry",
+            "healthyTissue": 99,
+            "ckdTissue": 99,
+            "akiTissue": 99
+        },
+        {
+            "dataType": "Spatial Metabolomics",
+            "healthyTissue": 99,
+            "ckdTissue": 99,
+            "akiTissue": 99
+        }
+    ],
+    "dataTypeByParticipant": [
+        {
+            "kpmpId": 123,
+            "diseaseType": "Healthy Reference",
+            "sn-rnaseq": true,
+            "sc-rnaseq": true,
+            "lmd-rnaseq": true,
+            "bulk-rnaseq": true,
+            "lmd proteomics": true,
+            "3d cytometry": true,
+            "spatial metabolomics": true
+        },
+        {
+            "kpmpId": 123,
+            "diseaseType": "Healthy Reference",
+            "sn-rnaseq": true,
+            "sc-rnaseq": true,
+            "lmd-rnaseq": true,
+            "bulk-rnaseq": false,
+            "lmd proteomics": true,
+            "3d cytometry": false,
+            "spatial metabolomics": true
+        },
+        {
+            "kpmpId": 123,
+            "diseaseType": "AKI",
+            "sn-rnaseq": true,
+            "sc-rnaseq": false,
+            "lmd-rnaseq": false,
+            "bulk-rnaseq": false,
+            "lmd proteomics": false,
+            "3d cytometry": true,
+            "spatial metabolomics": true
+        },
+        {
+            "kpmpId": 123,
+            "diseaseType": "AKI",
+            "sn-rnaseq": true,
+            "sc-rnaseq": true,
+            "lmd-rnaseq": true,
+            "bulk-rnaseq": true,
+            "lmd proteomics": true,
+            "3d cytometry": true,
+            "spatial metabolomics": true
+        },
+        {
+            "kpmpId": 123,
+            "diseaseType": "CKD",
+            "sn-rnaseq": true,
+            "sc-rnaseq": false,
+            "lmd-rnaseq": true,
+            "bulk-rnaseq": false,
+            "lmd proteomics": true,
+            "3d cytometry": true,
+            "spatial metabolomics": true
+        },
+        {
+            "kpmpId": 123,
+            "diseaseType": "CKD",
+            "sn-rnaseq": true,
+            "sc-rnaseq": true,
+            "lmd-rnaseq": true,
+            "bulk-rnaseq": true,
+            "lmd proteomics": true,
+            "3d cytometry": true,
+            "spatial metabolomics": true
+        },
+        {
+            "kpmpId": 123,
+            "diseaseType": "CKD",
+            "sn-rnaseq": true,
+            "sc-rnaseq": true,
+            "lmd-rnaseq": true,
+            "bulk-rnaseq": true,
+            "lmd proteomics": true,
+            "3d cytometry": true,
+            "spatial metabolomics": true
+        },
+        {
+            "kpmpId": 123,
+            "diseaseType": "CKD",
+            "sn-rnaseq": true,
+            "sc-rnaseq": true,
+            "lmd-rnaseq": true,
+            "bulk-rnaseq": true,
+            "lmd proteomics": true,
+            "3d cytometry": true,
+            "spatial metabolomics": true
+        }
 
+
+    ]
 }

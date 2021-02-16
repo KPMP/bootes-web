@@ -1,4 +1,7 @@
 @import "common-values.scss";
+.container {
+	background: white;
+}
 
 body {
 	font-size: 16px;
@@ -62,6 +65,11 @@ body {
 		height: calc(100vh + 10px
 			- #{$header-height-padded}
 			- #{$footer-height-padded});
+	}
+
+	.row {
+		margin-right: 15px;
+		margin-left: 15px;
 	}
 }
 
