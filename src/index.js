@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import '@babel/polyfill';
 import 'react-app-polyfill/stable';
 import 'core-js/features/array/find';
 import '../node_modules/bootstrap-css-only/css/bootstrap.min.css';
