@@ -12,7 +12,7 @@ class DataSummary extends Component {
                     
                         <div class='stats-container'>
                             <article className='stats-text'>
-                                <img className='inline-block stats-icon' src='img/icon_person_solid.svg'/>
+                                <img className='inline-block stats-icon' alt='Biopsies' src='img/icon_person_solid.svg'/>
                                 <span className='inline-block'>
                                     <div className='stats-number'>48</div>
                                     <div className='stats-label'>Biopsies</div>
@@ -21,7 +21,7 @@ class DataSummary extends Component {
                         </div>
                         <div class='stats-container'>
                             <article className='stats-text'>
-                                <img className='inline-block stats-icon' src='img/icon_dataset_solid.svg'/>
+                                <img className='inline-block stats-icon' alt='Datasets' src='img/icon_dataset_solid.svg'/>
                                 <span className='inline-block'>
                                     <div className='stats-number'>21</div>
                                     <div className='stats-label'>Datasets</div>
@@ -30,7 +30,7 @@ class DataSummary extends Component {
                         </div>
                         <div class='stats-container'>
                             <article className='stats-text'>
-                                <img className='inline-block stats-icon' src='img/icon_Biofluids_solid.svg'/>
+                                <img className='inline-block stats-icon' alt='Samples' src='img/icon_Biofluids_solid.svg'/>
                                 <span className='inline-block'>
                                     <div className='stats-number'>999</div>
                                     <div className='stats-label'>Samples</div>
@@ -42,7 +42,7 @@ class DataSummary extends Component {
                 <SamplesByDataTypeTable/>
                 <Row className='mt-4'>
                     <Col xs='12'>
-                        <a href=''>Learn more about our data types and methodologies</a>
+                        <a href='http://google.com'>Learn more about our data types and methodologies</a>
                     </Col>
                 </Row>
                 <UpsetPlot/>

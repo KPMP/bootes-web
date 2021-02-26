@@ -23,7 +23,7 @@ class SamplesByDataTypeTable extends Component {
                 Header: 'SAMPLES BY DATA TYPE',
                 id: 'dataType',
                 accessor: 'dataType',
-                maxWidth: 400
+                headerStyle: { whiteSpace: 'pre-wrap'}
             },
             {
                 Header: () => (
@@ -31,7 +31,7 @@ class SamplesByDataTypeTable extends Component {
                 ),
                 id: 'healthyTissue',
                 accessor: 'healthyTissue',
-                maxWidth: 250
+                headerStyle: { whiteSpace: 'pre-wrap'}
             },
             {
                 Header: () => (
@@ -39,7 +39,7 @@ class SamplesByDataTypeTable extends Component {
                 ),
                 id: 'ckdTissue',
                 accessor: 'ckdTissue',
-                maxWidth: 250
+                headerStyle: { whiteSpace: 'pre-wrap'}
             },
             {
                 Header: () => (
@@ -47,7 +47,7 @@ class SamplesByDataTypeTable extends Component {
                 ),
                 id: 'akiTissue',
                 accessor: 'akiTissue',
-                maxWidth: 250
+                headerStyle: { whiteSpace: 'pre-wrap'}
             },
         ]
     };

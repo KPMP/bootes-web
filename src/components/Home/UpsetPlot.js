@@ -21,7 +21,7 @@ class UpsetPlot extends Component {
                 Header: 'PARTICIPANTS',
                 id: "diseaseType",
                 accessor: 'diseaseType',
-                maxWidth: 200
+                headerStyle: { whiteSpace: 'pre-wrap'}
             },
             {
                 Header: "SN RNAseq",
@@ -30,8 +30,7 @@ class UpsetPlot extends Component {
                 Cell: ({row}) => (
                     this.renderCell(row, 'sn-rnaseq', 'sc-rnaseq')
                 ),
-                maxWidth: 120,
-                headerStyle: { wordWrap: 'break-word'}
+                headerStyle: { whiteSpace: 'pre-wrap'}
             },
             {
                 Header: "SC RNAseq",
@@ -40,7 +39,7 @@ class UpsetPlot extends Component {
                 Cell: ({row}) => (
                     this.renderCell(row, 'sc-rnaseq', 'lmd-rnaseq')
                 ),
-                maxWidth: 120
+                headerStyle: { whiteSpace: 'pre-wrap'}
             },
             {
                 Header: "LMD RNAseq",
@@ -49,7 +48,7 @@ class UpsetPlot extends Component {
                 Cell: ({row}) => (
                     this.renderCell(row, 'lmd-rnaseq', 'bulk-rnaseq')
                 ),
-                maxWidth: 120
+                headerStyle: { whiteSpace: 'pre-wrap'}
             },
             {
                 Header: "Bulk RNAseq",
@@ -58,7 +57,7 @@ class UpsetPlot extends Component {
                 Cell: ({row}) => (
                     this.renderCell(row, 'bulk-rnaseq', 'lmd proteomics')
                 ),
-                maxWidth: 120
+                headerStyle: { whiteSpace: 'pre-wrap'}
             },
             {
                 Header: "LMD Proteomics",
@@ -67,7 +66,7 @@ class UpsetPlot extends Component {
                 Cell: ({row}) => (
                     this.renderCell(row, 'lmd proteomics', '3d cytometry')
                 ),
-                maxWidth: 120
+                headerStyle: { whiteSpace: 'pre-wrap'}
             },
             {
                 Header: "3D Cytometry",
@@ -76,7 +75,7 @@ class UpsetPlot extends Component {
                 Cell: ({row}) => (
                     this.renderCell(row, '3d cytometry', 'spatial metabolomics')
                 ),
-                maxWidth: 120
+                headerStyle: { whiteSpace: 'pre-wrap'}
             },
             {
                 Header: "Spatial Metabolomics",
@@ -85,7 +84,7 @@ class UpsetPlot extends Component {
                 Cell: ({row}) => (
                     this.renderCell(row, 'spatial metabolomics')
                 ),
-                maxWidth: 120
+                headerStyle: { whiteSpace: 'pre-wrap'}
             },
         ]
     };
