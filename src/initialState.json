@@ -1,31 +1,31 @@
 {
     "summary": [
         {
-            "dataType": "SN RNAseq",
+            "dataType": "Single-nucleus RNA-seq (snRNA-seq)",
             "healthyTissue": 99,
             "ckdTissue": 99,
             "akiTissue": 99
         },
         {
-            "dataType": "SC RNAseq",
+            "dataType": "Single-cell RNA-seq (scRNA-seq)",
             "healthyTissue": 99,
             "ckdTissue": 99,
             "akiTissue": 99
         },
         {
-            "dataType": "LMD RNAseq",
+            "dataType": "Regional transcriptomics",
             "healthyTissue": 99,
             "ckdTissue": 99,
             "akiTissue": 99
         },
         {
-            "dataType": "Bulk RNAseq",
+            "dataType": "Bulk RNA-seq",
             "healthyTissue": 99,
             "ckdTissue": 99,
             "akiTissue": 99
         },
         {
-            "dataType": "LMD Proteomics",
+            "dataType": "Regional Proteomics",
             "healthyTissue": 99,
             "ckdTissue": 99,
             "akiTissue": 99
