@@ -17,8 +17,9 @@ class NotFoundPage extends Component {
                         <p className="oops-button-container">
                         <Button color='primary'
                             className="btn btn-primary"
-                            onClick={() => (window.location.href = '/')}
-                        >
+                            onClick={() => (
+                                window.location.href = window.location.pathname.includes('repository')?'/repository':'/'
+                            )}>
                             Back to Home
                         </Button>
                         </p>
