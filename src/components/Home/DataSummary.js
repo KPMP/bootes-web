@@ -1,51 +1,42 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import SamplesTable from './SamplesTable';
 import SamplesByDataTypeTable from './SamplesByDataTypeTable';
-import UpsetPlot from './UpsetPlot';
 
 class DataSummary extends Component {
     render() {
         return(
-            <Container className="mt-3 rounded border p-3 shadow-sm">
-                <Row><h5>Atlas Data Summary</h5></Row>
-                <Row className='mt-2 summary-stats'>
-                    
-                        <div class='stats-container'>
-                            <article className='stats-text'>
-                                <img className='inline-block stats-icon' alt='Biopsies' src='img/icon_person_solid.svg'/>
-                                <span className='inline-block'>
-                                    <div className='stats-number'>48</div>
-                                    <div className='stats-label'>Biopsies</div>
-                                </span>
-                            </article>
-                        </div>
-                        <div class='stats-container'>
-                            <article className='stats-text'>
-                                <img className='inline-block stats-icon' alt='Datasets' src='img/icon_dataset_solid.svg'/>
-                                <span className='inline-block'>
-                                    <div className='stats-number'>21</div>
-                                    <div className='stats-label'>Datasets</div>
-                                </span>
-                            </article>
-                        </div>
-                        <div class='stats-container'>
-                            <article className='stats-text'>
-                                <img className='inline-block stats-icon' alt='Samples' src='img/icon_Biofluids_solid.svg'/>
-                                <span className='inline-block'>
-                                    <div className='stats-number'>999</div>
-                                    <div className='stats-label'>Samples</div>
-                                </span>
-                            </article>
-                        </div>
-                </Row>
-                
+            <Container className="landing mt-3 rounded border p-3 shadow-sm">
+                <Row><h3 className="subtitle">Kidney Precision Medicine Project</h3></Row>
+                <Row><h1 className="title">Kidney Tissue Atlas</h1></Row>
+                <Row><p>The Kidney Tissue Atlas is a set of interactive tools built to promote retrieval, exploration, discovery, and analysis of the KPMP data by the greater research community.</p></Row>
+
+                <Col xs='12'>
+                    <a href='http://google.com'>Learn more about our data types and methodologies</a>
+                </Col>
+
+                <Row><h2 className="data-summary">Atlas Data Summary</h2></Row>
+                <Row><h5 className="sub-header">What data can I find in the Atlas Explorer?</h5></Row>
+                <Row><p>A subset of the raw data from the Data Repository has been analyzed and made available for interactive mining in the Atlas Explorer.</p></Row>
+
+                <div>
                 <SamplesByDataTypeTable/>
+                </div>
+                
+
+
+               <Row><h5 className="sub-header lowered">What data can I find in the Data Repository?</h5></Row>
+               <Row><p>The datasets available in the repository are a combination of raw and processed data from KPMP participant biopsies and reference tissue samples.</p></Row>
+
+                
+               <Row><p>Current data types in the repository include:</p></Row>
+
+               {/* name tbd */}
+               <SamplesTable/> 
+               <Row><h5><div class="fa fa-lock" aria-hidden="true"></div> = Controlled data. <a href="/">Learn how to access controlled data.</a></h5></Row>
+
                 <Row className='mt-4'>
-                    <Col xs='12'>
-                        <a href='http://google.com'>Learn more about our data types and methodologies</a>
-                    </Col>
                 </Row>
-                <UpsetPlot/>
             </Container>
 
         );

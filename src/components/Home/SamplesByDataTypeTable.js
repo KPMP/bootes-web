@@ -20,34 +20,40 @@ class SamplesByDataTypeTable extends Component {
         
         return [
             {
-                Header: 'SAMPLES BY DATA TYPE',
+                Header: 'OMICS TYPE',
                 id: 'dataType',
                 accessor: 'dataType',
-                headerStyle: { whiteSpace: 'pre-wrap'}
+                headerStyle: { whiteSpace: 'pre-wrap', fontWeight: '500' },
+                style: { fontWeight: '500' },
+                minWidth: 350,
             },
             {
                 Header: () => (
-                    <span>HEALTHY REFERENCE<br/>TISSUE</span>
+                    <span>HEALTHY REFERENCE</span>
                 ),
                 id: 'healthyTissue',
                 accessor: 'healthyTissue',
-                headerStyle: { whiteSpace: 'pre-wrap'}
+                headerStyle: { whiteSpace: 'pre-wrap', fontWeight: '500' },
+                styles: { fontWeight: '300' },
+                minWidth: 250,
             },
             {
                 Header: () => (
-                    <span>CKD<br/>TISSUE</span>
+                    <span>CKD</span>
                 ),
                 id: 'ckdTissue',
                 accessor: 'ckdTissue',
-                headerStyle: { whiteSpace: 'pre-wrap'}
+                headerStyle: { whiteSpace: 'pre-wrap', fontWeight: '500' },
+                styles: { fontWeight: '300' },
             },
             {
                 Header: () => (
-                    <span>AKI<br/>TISSUE</span>
+                    <span>AKI</span>
                 ),
                 id: 'akiTissue',
                 accessor: 'akiTissue',
-                headerStyle: { whiteSpace: 'pre-wrap'}
+                headerStyle: { whiteSpace: 'pre-wrap' },
+                styles: { fontWeight: '300' },
             },
         ]
     };
@@ -63,7 +69,7 @@ class SamplesByDataTypeTable extends Component {
                             ref={this.reactTable}
                             sortable={false}
                             columns={this.state.columns}
-                            className='-striped'
+                            className='samples-by-datatype -striped'
                             showPagination={false}
                             noDataText={'No data found'}
                             minRows = {0}
