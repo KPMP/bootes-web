@@ -8,52 +8,12 @@ class SamplesByDataTypeTable extends Component {
 
     constructor(props) {
         super(props);
-        this.getColumns = this.getColumns.bind(this);
         this.reactTable = React.createRef();
 
         this.state = {
-            columns: this.getColumns(),
             summary: initialState.summary
         };
     }
-
-
-
-    getColumns() {
-        
-        return [
-            {
-                Header: 'SAMPLES BY DATA TYPE',
-                id: 'dataType',
-                accessor: 'dataType',
-                headerStyle: { whiteSpace: 'pre-wrap'}
-            },
-            {
-                Header: () => (
-                    <span>HEALTHY REFERENCE<br/>TISSUE</span>
-                ),
-                id: 'healthyTissue',
-                accessor: 'healthyTissue',
-                headerStyle: { whiteSpace: 'pre-wrap'}
-            },
-            {
-                Header: () => (
-                    <span>CKD<br/>TISSUE</span>
-                ),
-                id: 'ckdTissue',
-                accessor: 'ckdTissue',
-                headerStyle: { whiteSpace: 'pre-wrap'}
-            },
-            {
-                Header: () => (
-                    <span>AKI<br/>TISSUE</span>
-                ),
-                id: 'akiTissue',
-                accessor: 'akiTissue',
-                headerStyle: { whiteSpace: 'pre-wrap'}
-            },
-        ]
-    };
 
     render() {
     var data = [{
@@ -86,7 +46,7 @@ class SamplesByDataTypeTable extends Component {
       
       
         return(
-            <div>
+            <div className="samples-plot">
             <Plot
              data={data}
              layout={{
@@ -102,7 +62,8 @@ class SamplesByDataTypeTable extends Component {
                 xaxis: {
                     showticklabels: false,zeroline: false, showgrid: false, showline: true, align:'left',
                 },
-                // yaxis: {anchor:'free', position:0.01, side:'right'}
+                yaxis: {anchor:'free', position:0.05, side:'right'}
+                // axis=dict(domain=[0.15, 0.9])
                 
              }}
              config={{displayModeBar:false }}
