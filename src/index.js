@@ -7,6 +7,8 @@ import 'core-js/features/number/is-nan';
 import 'core-js/features/array/includes';
 import 'core-js/features/string/includes';
 import '../node_modules/bootstrap-css-only/css/bootstrap.min.css';
+import './fonts/Lato/Lato-Regular.ttf'
+import './fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf'
 import './index.css';
 import './react-table.css';
 import App from './App';
