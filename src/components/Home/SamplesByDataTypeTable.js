@@ -23,8 +23,8 @@ class SamplesByDataTypeTable extends Component {
                 Header: 'OMICS TYPE',
                 id: 'dataType',
                 accessor: 'dataType',
-                headerStyle: { whiteSpace: 'pre-wrap', fontWeight: '500' },
-                style: { fontWeight: '500' },
+                headerClassName: 'omics data-type-table-header',
+                style: { fontWeight: '300', fontFamily:'RobotoCondensed-Regular', fontSize: '14px', color: '#333'},
                 minWidth: 350,
             },
             {
@@ -33,9 +33,10 @@ class SamplesByDataTypeTable extends Component {
                 ),
                 id: 'healthyTissue',
                 accessor: 'healthyTissue',
-                headerStyle: { whiteSpace: 'pre-wrap', fontWeight: '500' },
-                styles: { fontWeight: '300' },
-                minWidth: 250,
+                headerClassName: 'data-type-table-header',
+                style: { fontWeight: '300', fontFamily:'RobotoCondensed-Regular', fontSize: '16px', color: '#333'},
+                minHeaderWidth: 200,
+                minWidth: 200,
             },
             {
                 Header: () => (
@@ -43,8 +44,10 @@ class SamplesByDataTypeTable extends Component {
                 ),
                 id: 'ckdTissue',
                 accessor: 'ckdTissue',
-                headerStyle: { whiteSpace: 'pre-wrap', fontWeight: '500' },
-                styles: { fontWeight: '300' },
+                headerClassName: 'data-type-table-header',
+                style: { fontWeight: '300', fontFamily:'RobotoCondensed-Regular', fontSize: '16px', color: '#333'},
+                minHeaderWidth: 100,
+                minWidth: 100,
             },
             {
                 Header: () => (
@@ -52,8 +55,10 @@ class SamplesByDataTypeTable extends Component {
                 ),
                 id: 'akiTissue',
                 accessor: 'akiTissue',
-                headerStyle: { whiteSpace: 'pre-wrap' },
-                styles: { fontWeight: '300' },
+                headerClassName: 'data-type-table-header',
+                style: { fontWeight: '300', fontFamily:'RobotoCondensed-Regular', fontSize: '16px', color: '#333'},
+                minHeaderWidth: 200,
+                minWidth: 100
             },
         ]
     };
