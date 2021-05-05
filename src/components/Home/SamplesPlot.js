@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import ReactTable from 'react-table';
 import Plot from 'react-plotly.js';
 import initialState from '../../initialState';
-import { Row, Col } from 'reactstrap';
 
-class SamplesByDataTypeTable extends Component {
+class SamplesPlot extends Component {
 
     constructor(props) {
         super(props);
@@ -51,7 +49,7 @@ class SamplesByDataTypeTable extends Component {
                     data={data}
                     layout={{
                         autosize: false,
-                        width: 975,
+                        width: 850,
                         height: 500,
                         textposition:'auto',
                         textfont: {family:'FontAwesome'},
@@ -65,9 +63,9 @@ class SamplesByDataTypeTable extends Component {
                         },
                         hovermode: false,
                         xaxis: {
-                            domain: [0.45, 1],
+                            domain: [0.4, 1],
                             showticklabels: false,
-                            zeroline: false,
+                            zerolinecolor: '#cccccc',
                             showgrid: false,
                             showline: true,
                             align:'left',
@@ -75,6 +73,7 @@ class SamplesByDataTypeTable extends Component {
                         },
                         yaxis2: {
                             anchor:'free',
+                            showgrid: false,
                             position:0.03,
                             side:'right'
                         }
@@ -86,4 +85,4 @@ class SamplesByDataTypeTable extends Component {
     }
 }
 
-export default SamplesByDataTypeTable;
+export default SamplesPlot;

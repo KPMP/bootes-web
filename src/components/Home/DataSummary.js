@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import SamplesTable from './SamplesTable';
+import SamplesPlot from './SamplesPlot';
 import SamplesByDataTypeTable from './SamplesByDataTypeTable';
 
 class DataSummary extends Component {
@@ -19,11 +19,9 @@ class DataSummary extends Component {
                 <Row><h5 className="sub-header">What data can I find in the Atlas Explorer?</h5></Row>
                 <Row><p>A subset of the raw data from the Data Repository has been analyzed and made available for interactive mining in the Atlas Explorer.</p></Row>
 
-                <div>
-                    <SamplesByDataTypeTable/>
-                </div>
-                
-
+                <Row>
+                <   SamplesByDataTypeTable/>
+                </Row>
 
                <Row><h5 className="sub-header lowered">What data can I find in the Data Repository?</h5></Row>
                <Row><p>The datasets available in the repository are a combination of raw and processed data from KPMP participant biopsies and reference tissue samples.</p></Row>
@@ -31,7 +29,13 @@ class DataSummary extends Component {
                 
                <Row><p>Current data types in the repository include:</p></Row>
 
-               <SamplesTable/>
+               <SamplesPlot/>
+               <Row>
+                <hr className="samples-plot-line" />
+               </Row>
+               <Row>
+                   <p className="samples-plot-files">Total Files: 1,537</p>
+               </Row>
                <Row><h5 className="lock"><i class="fa fa-lock" aria-hidden="true"></i> = Controlled data. <a className="learn-link" href="/">Learn how to access controlled data.</a></h5></Row>
 
                 <Row className='mt-4'>
