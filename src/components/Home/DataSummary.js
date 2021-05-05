@@ -20,7 +20,7 @@ class DataSummary extends Component {
                 <Row><p>A subset of the raw data from the Data Repository has been analyzed and made available for interactive mining in the Atlas Explorer.</p></Row>
 
                 <div>
-                <SamplesByDataTypeTable/>
+                    <SamplesByDataTypeTable/>
                 </div>
                 
 
@@ -31,9 +31,8 @@ class DataSummary extends Component {
                 
                <Row><p>Current data types in the repository include:</p></Row>
 
-               {/* name tbd */}
-               <SamplesTable/> 
-               <Row><h5><div class="fa fa-lock" aria-hidden="true"></div> = Controlled data. <a href="/">Learn how to access controlled data.</a></h5></Row>
+               <SamplesTable/>
+               <Row><h5 className="lock"><i class="fa fa-lock" aria-hidden="true"></i> = Controlled data. <a className="learn-link" href="/">Learn how to access controlled data.</a></h5></Row>
 
                 <Row className='mt-4'>
                 </Row>
