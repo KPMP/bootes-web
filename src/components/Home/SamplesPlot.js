@@ -52,8 +52,6 @@ class SamplesPlot extends Component {
                         width: 850,
                         height: 500,
                         textposition:'auto',
-                        textfont: {family:'FontAwesome'},
-                        mode: 'text',
                         margin: {
                             l: 0,
                             r: 0,
