@@ -22,9 +22,9 @@ class SamplesByDataTypeTable extends Component {
         marker: {color: 'rgb(40, 60, 94)'},
         text: [440, 66, 51, 210, 56, 51, 48, 89, 5, 8, 4, 4, 400, 103, 2].reverse(),
         textposition:'outside',
-        
+        yaxis: 'y2',
         y: [
-            `<i class="fa fa-lock" aria-hidden="true"></i><a href='https://qa-atlas.kpmp.org/repository/?facetTab=files&filters={"op":"and","content":[{"op":"in","content":{"field":"data_format","value":["fastq"]}},{"op":"in","content":{"field":"experimental_strategy","value":["Single-nucleus RNA-Seq"]}}]}'>Single-nucleus FASTQs</a>`,
+            `<a href='https://qa-atlas.kpmp.org/repository/?facetTab=files&filters={"op":"and","content":[{"op":"in","content":{"field":"data_format","value":["fastq"]}},{"op":"in","content":{"field":"experimental_strategy","value":["Single-nucleus RNA-Seq"]}}]}'>Single-nucleus FASTQs</a>`,
             `<a href='https://qa-atlas.kpmp.org/repository/?facetTab=files&filters={"op":"and","content":[{"op":"in","content":{"field":"data_format","value":["bam"]}},{"op":"in","content":{"field":"experimental_strategy","value":["Single-nucleus RNA-Seq"]}}]}'>Single-nucleus BAMs</a>`,
             `<a href='https://qa-atlas.kpmp.org/repository/?facetTab=files&filters={"op":"and","content":[{"op":"in","content":{"field":"experimental_strategy","value":["Single-nucleus RNA-Seq"]}},{"op":"in","content":{"field":"workflow_type","value":["Expression Matrix"]}}]}'>Single-nucleus expression matrices</a>`,
             `<a href='https://qa-atlas.kpmp.org/repository/?facetTab=files&filters={"op":"and","content":[{"op":"in","content":{"field":"data_format","value":["fastq"]}},{"op":"in","content":{"field":"experimental_strategy","value":["Single-cell RNA-Seq"]}}]}'>Single-cell FASTQs</a>`,
@@ -47,47 +47,41 @@ class SamplesByDataTypeTable extends Component {
       
         return(
             <div className="samples-plot">
-            <Plot
-             data={data}
-             layout={{
-                textposition:'auto',
-                margin: {
-                    l: 225,
-                    r: 25,
-                    b: 25,
-                    t: 25,
-                    pad: 4
-                },
-                hovermode: false,
-                xaxis: {
-                    showticklabels: false,zeroline: false, showgrid: false, showline: true, align:'left',
-                },
-                yaxis: {anchor:'free', position:0.05, side:'right'}
-                // axis=dict(domain=[0.15, 0.9])
-                
-             }}
-             config={{displayModeBar:false }}
-             />
-            {/* <Plot divId="umapPlot" data={this.state.plotData}
-            layout={ { annotations: this.state.plotAnnotations, width: 460, showlegend: false,
-                yaxis: { zeroline: false, showgrid: false, showline: true },
-                xaxis: { zeroline: false, showgrid: false, showline: true },
-                autosize: false,
-                // hovermode: 'closest',
-                // dragmode: 'pan',
-                margin: {
-                    l: 25,
-                    r: 25,
-                    b: 25,
-                    t: 25,
-                    pad: 4
-                } } }
-            config={{
-                displaylogo: false,
-                // toImageButtonOptions: { filename: this.getExportFilename() },
-                modeBarButtonsToRemove: ['hoverCompareCartesian', 'hoverClosestCartesian', 'zoom2d', 'toggleSpikelines', 'toggleHover', 'select2d', 'lasso2d']}}
-      /> */}
-                  </div>
+                <Plot
+                    data={data}
+                    layout={{
+                        autosize: false,
+                        width: 975,
+                        height: 500,
+                        textposition:'auto',
+                        textfont: {family:'FontAwesome'},
+                        mode: 'text',
+                        margin: {
+                            l: 0,
+                            r: 0,
+                            b: 0,
+                            t: 0,
+                            pad: 0
+                        },
+                        hovermode: false,
+                        xaxis: {
+                            domain: [0.45, 1],
+                            showticklabels: false,
+                            zeroline: false,
+                            showgrid: false,
+                            showline: true,
+                            align:'left',
+                            automargin: true
+                        },
+                        yaxis2: {
+                            anchor:'free',
+                            position:0.03,
+                            side:'right'
+                        }
+                    }}
+                    config={{displayModeBar:false}}
+                />
+            </div>
         );
     }
 }
