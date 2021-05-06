@@ -56,6 +56,9 @@ class SamplesPlot extends Component {
                             <i class="hidden-lock-fix hidden-lock fa fa-lock" aria-hidden="true"></i>
                             <i class="fa fa-lock" aria-hidden="true"></i>
                             <i class="fa fa-lock" aria-hidden="true"></i>
+                            <i class="hidden-lock-fix hidden-lock fa fa-lock" aria-hidden="true"></i>
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                            <i class="fa fa-lock" aria-hidden="true"></i>
                         </div>
                     </div>
 
