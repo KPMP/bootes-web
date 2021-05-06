@@ -6,15 +6,8 @@ class LeftContent extends Component {
         return(
               <Row>
                 <Container className="mt-3 rounded border p-3 shadow-sm">
-                  KIDNEY PRECISION MEDICINE PROJECT
-                  <h5>Kidney Tissue Atlas</h5>
-                  lorum ipsum ....
-                </Container>
-                <Container className="mt-3 rounded border p-3 shadow-sm">
                   <h5>Atlas Explorer</h5>
-                  <div>View summary data visualizations across the various KPMP 'omics' 
-                    technologies by gene, and how your marker correlates to clinical 
-                    phenotypes.
+                  <div>Search for markers or cell types of interest and view summary data vizualizations across the various KPMP 'omics' technologies.
                   </div>
                   <div className='mt-3'>
                     <Button color='primary' href='/explorer' size='lg' block>Go to Explorer</Button>
@@ -23,12 +16,21 @@ class LeftContent extends Component {
                 <Container className="mt-3 rounded border p-3 shadow-sm">
                   <h5>Atlas Repository</h5>
                   <div>
-                    Lorum ipsum...
+                    Download raw gene data generated from KPMP participant biopsies and reference tissue samples.
                   </div>
                   <div className='mt-3'>
                     <Button color='primary' href='/repository' size='lg' block>Go to Repository</Button>
                   </div>
-                </Container>              
+                </Container>
+                <Container className="mt-3 rounded border p-3 shadow-sm">
+                  <h5>KPMP Central Biorepository</h5>
+                  <div>
+                    Learn more about ancillary study opprotunities using KPMP biospeceimens and other resources.
+                  </div>
+                  <div className='mt-3'>
+                    <Button color='primary' href='/repository' size='lg' block>Collaborate with us</Button>
+                  </div>
+                </Container>
               </Row>
         );
     }

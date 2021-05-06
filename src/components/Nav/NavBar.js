@@ -35,6 +35,13 @@ const NavBar = (props) => {
             <NavItem className="px-1">
               <NavLink href="/repository"><span className="nav-text px-1">Repository</span></NavLink>
             </NavItem>
+            </Nav>
+            <Nav>
+            <NavItem className="test px-1">
+              <NavLink href="https://www.kpmp.org/help-docs/data">  
+                <i className="far fa-question-circle"></i>
+              </NavLink>
+            </NavItem>
           </Nav>
         </Collapse>
       </Navbar>

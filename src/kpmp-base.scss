@@ -8,6 +8,9 @@ body {
 	background-color: $kpmp-gray;
 }
 
+.btn-primary {
+    background-color: $kpmp-button;
+}
 #footer {
 	background: $footer-color;
 }
@@ -42,7 +45,7 @@ body {
 
 	.active .nav-link {
 		color: #0082f3 !important;
-		font-weight: bold;
+		font-weight: 600;
 	}
 
 	.nav-link:hover {
