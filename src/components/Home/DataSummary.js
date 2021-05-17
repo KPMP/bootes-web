@@ -12,7 +12,7 @@ class DataSummary extends Component {
                 <Row><p>The Kidney Tissue Atlas is a set of interactive tools built to promote retrieval, exploration, discovery, and analysis of the KPMP data by the greater research community.</p></Row>
 
                 <Col xs='12'>
-                    <a href='https://www.kpmp.org/help-docs/data'>Learn more about our data types and methodologies</a>
+                    <a target='_blank' href='https://www.kpmp.org/help-docs/data'>Learn more about our data types and methodologies</a>
                 </Col>
 
                 <Row><h2 className="data-summary">Atlas Data Summary</h2></Row>
@@ -36,7 +36,7 @@ class DataSummary extends Component {
                <Row>
                    <p className="samples-plot-files">Total Files: 1,537</p>
                </Row>
-               <Row><h5 className="lock"><i class="fa fa-lock" aria-hidden="true"></i> = Controlled data. <a className="learn-link" href="https://www.kpmp.org/controlled-data">Learn how to access controlled data.</a></h5></Row>
+               <Row><h5 className="lock"><i class="fa fa-lock" aria-hidden="true"></i> = Controlled data. <a className="learn-link" target='_blank' href="https://www.kpmp.org/controlled-data">Learn how to access controlled data.</a></h5></Row>
 
                 <Row className='mt-4'>
                 </Row>
