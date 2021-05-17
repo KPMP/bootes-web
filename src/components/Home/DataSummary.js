@@ -36,7 +36,7 @@ class DataSummary extends Component {
                <Row>
                    <p className="samples-plot-files">Total Files: 1,537</p>
                </Row>
-               <Row><h5 className="lock"><i class="fa fa-lock" aria-hidden="true"></i> = Controlled data. <a className="learn-link" target='_blank' href="https://www.kpmp.org/controlled-data">Learn how to access controlled data.</a></h5></Row>
+               <Row><h5 className="lock"><i class="fa fa-lock" aria-hidden="true"></i> = Controlled data. <a className="learn-link" target='_blank' rel="noreferrer" href="https://www.kpmp.org/controlled-data">Learn how to access controlled data.</a></h5></Row>
 
                 <Row className='mt-4'>
                 </Row>
