@@ -17,7 +17,7 @@ class SamplesByDataTypeTable extends Component {
     }
 
     getColumns() {
-        
+
         return [
             {
                 Header: 'OMICS TYPE',
@@ -25,7 +25,7 @@ class SamplesByDataTypeTable extends Component {
                 accessor: 'dataType',
                 headerClassName: 'omics data-type-table-header',
                 className: 'data-type-table-content',
-                minWidth: 350,
+                minWidth: 295,
             },
             {
                 Header: () => (
@@ -35,8 +35,8 @@ class SamplesByDataTypeTable extends Component {
                 accessor: 'healthyTissue',
                 headerClassName: 'data-type-table-header',
                 className: 'data-type-table-content',
-                minHeaderWidth: 200,
-                minWidth: 200,
+                minHeaderWidth: 250,
+                minWidth: 250,
             },
             {
                 Header: () => (
@@ -46,8 +46,8 @@ class SamplesByDataTypeTable extends Component {
                 accessor: 'ckdTissue',
                 headerClassName: 'data-type-table-header',
                 className: 'data-type-table-content',
-                minHeaderWidth: 100,
-                minWidth: 100,
+                minHeaderWidth: 150,
+                minWidth: 150,
             },
             {
                 Header: () => (
@@ -57,19 +57,19 @@ class SamplesByDataTypeTable extends Component {
                 accessor: 'akiTissue',
                 headerClassName: 'data-type-table-header',
                 className: 'data-type-table-content',
-                minHeaderWidth: 200,
-                minWidth: 100
+                minHeaderWidth: 150,
+                minWidth: 150
             },
         ]
     };
 
     render() {
-        return(
+        return (
             <article id='summary-plot'>
                 <Row className='mt-4'>
                     <Col xs='12'>
                         <ReactTable
-                            style={{border: 'none'}}
+                            style={{ border: 'none' }}
                             data={this.state.summary}
                             ref={this.reactTable}
                             sortable={false}
@@ -77,7 +77,7 @@ class SamplesByDataTypeTable extends Component {
                             className='samples-by-datatype -striped'
                             showPagination={false}
                             noDataText={'No data found'}
-                            minRows = {0}
+                            minRows={0}
                         />
                     </Col>
                 </Row>
