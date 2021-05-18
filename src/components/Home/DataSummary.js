@@ -5,7 +5,7 @@ import SamplesByDataTypeTable from './SamplesByDataTypeTable';
 
 class DataSummary extends Component {
     render() {
-        return(
+        return (
             <Container className="landing mt-3 rounded border p-3 shadow-sm">
                 <Row><h3 className="subtitle">Kidney Precision Medicine Project</h3></Row>
                 <Row><h1 className="title">Kidney Tissue Atlas</h1></Row>
@@ -20,23 +20,25 @@ class DataSummary extends Component {
                 <Row><p>A subset of the raw data from the Data Repository has been analyzed and made available for interactive mining in the Atlas Explorer.</p></Row>
 
                 <Row>
-                <   SamplesByDataTypeTable/>
+                    <SamplesByDataTypeTable />
                 </Row>
 
-               <Row><h5 className="sub-header lowered">What data can I find in the Data Repository?</h5></Row>
-               <Row><p>The datasets available in the repository are a combination of raw and processed data from KPMP participant biopsies and reference tissue samples.</p></Row>
+                <Row><h5 className="sub-header lowered">What data can I find in the Data Repository?</h5></Row>
+                <Row><p>The datasets available in the repository are a combination of raw and processed data from KPMP participant biopsies and reference tissue samples.</p></Row>
 
-                
-               <Row><p>Current data types in the repository include:</p></Row>
 
-               <SamplesPlot/>
-               <Row>
-                <hr className="samples-plot-line" />
-               </Row>
-               <Row>
-                   <p className="samples-plot-files">Total Files: 1,537</p>
-               </Row>
-               <Row><h5 className="lock"><i class="fa fa-lock" aria-hidden="true"></i> = Controlled data. <a className="learn-link" target='_blank' rel="noreferrer" href="https://www.kpmp.org/controlled-data">Learn how to access controlled data.</a></h5></Row>
+                <Row><p>Current data types in the repository include:</p></Row>
+                <Row><h5 className="controlled-data"><span className="controlled-data-asterisk">*</span> = Controlled data. <a className="learn-link" href="https://www.kpmp.org/controlled-data">Learn how to access controlled data.</a></h5></Row>
+                <Row>
+                    <h5 className="samples-plot-header">Number of files</h5>
+                </Row>
+                <SamplesPlot />
+                <Row>
+                    <hr className="samples-plot-line" />
+                </Row>
+                <Row>
+                    <p className="samples-plot-files">Total Files: 1,537</p>
+                </Row>
 
                 <Row className='mt-4'>
                 </Row>

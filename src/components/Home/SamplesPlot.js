@@ -17,51 +17,35 @@ class SamplesPlot extends Component {
         var data = [{
             type: 'bar',
             x: [440, 66, 51, 210, 56, 51, 48, 89, 5, 8, 4, 4, 400, 103, 2].reverse(),
-            marker: {color: 'rgb(40, 60, 94)'},
+            marker: { color: 'rgb(40, 60, 94)' },
             text: [440, 66, 51, 210, 56, 51, 48, 89, 5, 8, 4, 4, 400, 103, 2].reverse(),
-            textposition:'outside',
+            textposition: 'outside',
             yaxis: 'y2',
             y: [
-                `<a href='https://atlas.kpmp.org/repository/?facetTab=files&filters={"op":"and","content":[{"op":"in","content":{"field":"data_format","value":["fastq"]}},{"op":"in","content":{"field":"experimental_strategy","value":["Single-nucleus RNA-Seq"]}}]}'>Single-nucleus FASTQs</a>`,
-                `<a href='https://atlas.kpmp.org/repository/?facetTab=files&filters={"op":"and","content":[{"op":"in","content":{"field":"data_format","value":["bam"]}},{"op":"in","content":{"field":"experimental_strategy","value":["Single-nucleus RNA-Seq"]}}]}'>Single-nucleus BAMs</a>`,
+                `<a href='https://atlas.kpmp.org/repository/?facetTab=files&filters={"op":"and","content":[{"op":"in","content":{"field":"data_format","value":["fastq"]}},{"op":"in","content":{"field":"experimental_strategy","value":["Single-nucleus RNA-Seq"]}}]}'>Single-nucleus FASTQs</a><span>*</span>`,
+                `<a href='https://atlas.kpmp.org/repository/?facetTab=files&filters={"op":"and","content":[{"op":"in","content":{"field":"data_format","value":["bam"]}},{"op":"in","content":{"field":"experimental_strategy","value":["Single-nucleus RNA-Seq"]}}]}'>Single-nucleus BAMs</a><span>*</span>`,
                 `<a href='https://atlas.kpmp.org/repository/?facetTab=files&filters={"op":"and","content":[{"op":"in","content":{"field":"experimental_strategy","value":["Single-nucleus RNA-Seq"]}},{"op":"in","content":{"field":"workflow_type","value":["Expression Matrix"]}}]}'>Single-nucleus expression matrices</a>`,
-                `<a href='https://atlas.kpmp.org/repository/?facetTab=files&filters={"op":"and","content":[{"op":"in","content":{"field":"data_format","value":["fastq"]}},{"op":"in","content":{"field":"experimental_strategy","value":["Single-cell RNA-Seq"]}}]}'>Single-cell FASTQs</a>`,
-                `<a href='https://atlas.kpmp.org/repository/?facetTab=files&filters={"op":"and","content":[{"op":"in","content":{"field":"data_format","value":["bam"]}},{"op":"in","content":{"field":"experimental_strategy","value":["Single-cell RNA-Seq"]}}]}'>Single-cell BAMs</a>`,
+                `<a href='https://atlas.kpmp.org/repository/?facetTab=files&filters={"op":"and","content":[{"op":"in","content":{"field":"data_format","value":["fastq"]}},{"op":"in","content":{"field":"experimental_strategy","value":["Single-cell RNA-Seq"]}}]}'>Single-cell FASTQs</a><span>*</span>`,
+                `<a href='https://atlas.kpmp.org/repository/?facetTab=files&filters={"op":"and","content":[{"op":"in","content":{"field":"data_format","value":["bam"]}},{"op":"in","content":{"field":"experimental_strategy","value":["Single-cell RNA-Seq"]}}]}'>Single-cell BAMs</a><span>*</span>`,
                 `<a href='https://atlas.kpmp.org/repository/?facetTab=files&filters={"op":"and","content":[{"op":"in","content":{"field":"experimental_strategy","value":["Single-cell RNA-Seq"]}},{"op":"in","content":{"field":"workflow_type","value":["Expression Matrix"]}}]}'>Single-cell expression matrices</a>`,
-                `<a href='https://atlas.kpmp.org/repository/?facetTab=files&filters={"op":"and","content":[{"op":"in","content":{"field":"data_format","value":["fastq"]}},{"op":"in","content":{"field":"experimental_strategy","value":["Sub-segmental LMD Transcriptomics"]}}]}'>LMD RNA FASTQs</a>`,
-                `<a href='https://atlas.kpmp.org/repository/?facetTab=files&filters={"op":"and","content":[{"op":"in","content":{"field":"data_format","value":["bam"]}},{"op":"in","content":{"field":"experimental_strategy","value":["Sub-segmental LMD Transcriptomics"]}}]}'>LMD RNA BAMs</a>`,
+                `<a href='https://atlas.kpmp.org/repository/?facetTab=files&filters={"op":"and","content":[{"op":"in","content":{"field":"data_format","value":["fastq"]}},{"op":"in","content":{"field":"experimental_strategy","value":["Sub-segmental LMD Transcriptomics"]}}]}'>LMD RNA FASTQs</a><span>*</span>`,
+                `<a href='https://atlas.kpmp.org/repository/?facetTab=files&filters={"op":"and","content":[{"op":"in","content":{"field":"data_format","value":["bam"]}},{"op":"in","content":{"field":"experimental_strategy","value":["Sub-segmental LMD Transcriptomics"]}}]}'>LMD RNA BAMs</a><span>*</span>`,
                 `<a href='https://atlas.kpmp.org/repository/?facetTab=files&filters={"op":"and","content":[{"op":"in","content":{"field":"experimental_strategy","value":["Sub-segmental LMD Transcriptomics"]}},{"op":"in","content":{"field":"workflow_type","value":["Non-normalized Expression Matrix","Normalized Expression Matrix"]}}]}'>LMD expression matrices</a>`,
-                `<a href='https://atlas.kpmp.org/repository/?facetTab=files&filters={"op":"and","content":[{"op":"in","content":{"field":"data_format","value":["fastq"]}},{"op":"in","content":{"field":"experimental_strategy","value":["Bulk Total/mRNA"]}}]}'>Bulk RNA FASTQs</a>`,
-                `<a href='https://atlas.kpmp.org/repository/?facetTab=files&filters={"op":"and","content":[{"op":"in","content":{"field":"data_format","value":["bam"]}},{"op":"in","content":{"field":"experimental_strategy","value":["Bulk Total/mRNA"]}}]}'>Bulk RNA BAMs</a>`,
+                `<a href='https://atlas.kpmp.org/repository/?facetTab=files&filters={"op":"and","content":[{"op":"in","content":{"field":"data_format","value":["fastq"]}},{"op":"in","content":{"field":"experimental_strategy","value":["Bulk Total/mRNA"]}}]}'>Bulk RNA FASTQs</a><span>*</span>`,
+                `<a href='https://atlas.kpmp.org/repository/?facetTab=files&filters={"op":"and","content":[{"op":"in","content":{"field":"data_format","value":["bam"]}},{"op":"in","content":{"field":"experimental_strategy","value":["Bulk Total/mRNA"]}}]}'>Bulk RNA BAMs</a><span>*</span>`,
                 `<a href='https://atlas.kpmp.org/repository/?facetTab=files&filters={"op":"and","content":[{"op":"in","content":{"field":"experimental_strategy","value":["Bulk Total/mRNA"]}},{"op":"in","content":{"field":"workflow_type","value":["Non-normalized Expression Matrix"]}}]}'>Bulk RNA Expression matrices</a>`,
                 `<a href='https://atlas.kpmp.org/repository/?facetTab=files&filters={"op":"and","content":[{"op":"in","content":{"field":"experimental_strategy","value":["Light Microscopic Whole Slide Images"]}}]}'>LM WSI</a>`,
                 `<a href='https://atlas.kpmp.org/repository/?facetTab=files&filters={"op":"and","content":[{"op":"in","content":{"field":"workflow_type","value":["Experimental Metadata"]}}]}'>Experimental metadata</a>`,
                 `<a href='https://atlas.kpmp.org/repository/?facetTab=files&filters={"op":"and","content":[{"op":"in","content":{"field":"data_type","value":["Clinical Study Data"]}}]}'>Clinical dataset</a>`,
-                
-        ].reverse(),
+
+            ].reverse(),
             orientation: 'h'
         }];
-        
-        
-        return(
+
+
+        return (
             <div className="s">
                 <div className="row tightrow">
-                    <div className="row lock-container">
-                        <div>
-                            <i class="fa fa-lock" aria-hidden="true"></i>
-                            <i class="fa fa-lock" aria-hidden="true"></i>
-                            <i class="hidden-lock-fix hidden-lock fa fa-lock" aria-hidden="true"></i>
-                            <i class="fa fa-lock" aria-hidden="true"></i>
-                            <i class="fa fa-lock" aria-hidden="true"></i>
-                            <i class="hidden-lock-fix hidden-lock fa fa-lock" aria-hidden="true"></i>
-                            <i class="fa fa-lock" aria-hidden="true"></i>
-                            <i class="fa fa-lock" aria-hidden="true"></i>
-                            <i class="hidden-lock-fix hidden-lock fa fa-lock" aria-hidden="true"></i>
-                            <i class="fa fa-lock" aria-hidden="true"></i>
-                            <i class="fa fa-lock" aria-hidden="true"></i>
-                        </div>
-                    </div>
-
                     <div className="samples-plot">
                         <Plot
                             data={data}
@@ -69,7 +53,7 @@ class SamplesPlot extends Component {
                                 autosize: false,
                                 width: 795,
                                 height: 500,
-                                textposition:'auto',
+                                textposition: 'auto',
                                 margin: {
                                     l: 0,
                                     r: 0,
@@ -84,17 +68,17 @@ class SamplesPlot extends Component {
                                     zerolinecolor: '#cccccc',
                                     showgrid: false,
                                     showline: true,
-                                    align:'left',
+                                    align: 'left',
                                     automargin: true
                                 },
                                 yaxis2: {
-                                    anchor:'free',
+                                    anchor: 'free',
                                     showgrid: false,
-                                    position:0.02,
-                                    side:'right'
+                                    position: 0.02,
+                                    side: 'right'
                                 }
                             }}
-                            config={{displayModeBar:false}}
+                            config={{ displayModeBar: false }}
                         />
                     </div>
                 </div>

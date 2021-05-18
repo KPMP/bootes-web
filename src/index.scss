@@ -171,6 +171,28 @@ h5 {
 }
 
 #summary-plot .ReactTable .rt-thead .rt-th,
+#summary-plot .ReactTable .rt-tbody .rt-td{
+  border-right: 1px solid rgba(0, 0, 0, 0.0);
+}
+
+.js-plotly-plot .plotly svg .y2tick:nth-child(3) text {
+  color: red;
+}
+
+.controlled-data, .landing .controlled-data a {
+  font-size: 14px;
+}
+
+.controlled-data-asterisk {
+  color: red;
+  font-size: 18px;
+}
+
+.js-plotly-plot .plotly svg .y2tick text tspan {
+  fill: red;
+}
+
+#summary-plot .ReactTable .rt-thead .rt-th,
 .rt-th.omics.rt-resizable-header .rt-resizable-header-content {
   text-align: left;
   font-weight: 500;
@@ -180,6 +202,13 @@ h5 {
     Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   font-style: normal;
+}
+#summary-plot .mt-4.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+#summary-plot .mt-4.row .col-12 {
+  padding: 0px;
 }
 
 .data-type-table-header {
